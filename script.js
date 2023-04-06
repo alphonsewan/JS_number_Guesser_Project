@@ -17,7 +17,7 @@ const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
  /*I don't really get this
  const getAbsoluteDistance = (humanGuess, targetNumber) => {
     return Math.abs(humanGuess - targetNumber);
-  } 
+  }
   */
 
   const humanGuessResult = Math.abs(targetNumber - humanGuess);
@@ -55,12 +55,10 @@ const advanceRound = () => {
 
 
 /*The Project Requirements (Tasks)
-
 1.
 Create a generateTarget() function. This function should return a random integer between 0 and 9.
 
 The purpose of this function is to be called at the start of each new round in order to generate the new secret target number.
-
 
 2.
 Create a compareGuesses() function. This function:
@@ -70,7 +68,6 @@ Determines which player (human or computer) wins based on which guess is closest
 Return true if the human player wins, and false if the computer player wins.
 The purpose of this function is to be called each round to determine which guess is closest to the target number.
 
-
 3.
 Create an updateScore() function. This function:
 
@@ -79,7 +76,6 @@ Increases the score variable (humanScore or computerScore) by 1 depending on the
 Does not need to return any value.
 The purpose of this function is to be used to correctly increase the winner’s score after each round.
 
-
 4.
 Create an advanceRound() function. This function should increase the value of currentRoundNumber by 1.
 
@@ -87,10 +83,8 @@ The purpose of this function is to be used to update the round number after each
 
 After completing advanceRound(), your Number Guesser game should be fully operational. You should be able to make guesses, see your or the computer score increase correctly, move to the next round, and see the correct round displayed.
 
-
 5.
 Test that your code is working properly by invoking your newly written functions within script.js with sample inputs. You can delete this code once you’re convinced that everything is working as it should.
-
 
 6.
 Great work! If you’d like to see the solution, move to the next task. If you’d like to extend your project on your own, you could consider the following:
