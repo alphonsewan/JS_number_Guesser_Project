@@ -40,7 +40,6 @@ const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
   }
 }
 
-
 const updateScore = winner => {
   if (winner === 'human') {
     (humanScore += 1);
@@ -49,7 +48,6 @@ const updateScore = winner => {
     (computerScore += 1);
   }
 }
-
 
 const advanceRound = () => {
   (currentRoundNumber += 1); 
