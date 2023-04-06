@@ -12,9 +12,14 @@ const generateTarget = () => {
 //compare the results
 const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
 
-  const getAbsoluteDistance = (number1, number2) => {
-    return Math.abs(number1, number2);
-  }
+
+//compare the results 
+
+ /*I don't really get this
+ const getAbsoluteDistance = (humanGuess, targetNumber) => {
+    return Math.abs(humanGuess - targetNumber);
+  } 
+  */
 
   const humanGuessResult = Math.abs(targetNumber - humanGuess);
   const computerGuessResult = Math.abs(targetNumber - computerGuess);
@@ -49,6 +54,7 @@ const updateScore = winner => {
 const advanceRound = () => {
   (currentRoundNumber += 1); 
 }
+
 
 
 
