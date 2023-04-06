@@ -12,7 +12,6 @@ const generateTarget = () => {
 //compare the results
 const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
 
-
 //compare the results 
 
  /*I don't really get this
@@ -26,10 +25,10 @@ const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
 
 
   if (humanGuess < 0 || humanGuess > 10) {
-    alert('Out of the Range! The range is between 1-10.');}
+    alert('Out of the Range! The range is between 1-10.');
     return false;
-
-  if (humanGuessResult < computerGuessResult) {
+  }
+  else if (humanGuessResult < computerGuessResult) {
     return true;
   }
   else if (humanGuessResult === computerGuessResult) {
@@ -38,6 +37,7 @@ const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
   else {
     return false;
   }
+
 }
 
 const updateScore = winner => {
@@ -52,8 +52,6 @@ const updateScore = winner => {
 const advanceRound = () => {
   (currentRoundNumber += 1); 
 }
-
-
 
 
 /*The Project Requirements (Tasks)
